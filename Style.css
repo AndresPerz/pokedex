@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.cabeza{
+    display: flex;
+    justify-content: center;
+}
+
+.cabeza img{
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+.contenedor{
+    height: auto;
+    width: 100%;
+    background-image: url('./img/fondo.png');
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poke{
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    position: relative;
+}
+
+.poke .pokedex{
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.pokemon{
+    margin-left: 470px;
+    margin-top: 140px;
+    display: flex;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+}
+
+.pokemon img{
+    width: 140px;
+    height: auto;
+    margin-right: 800px;
+    margin-bottom: 50px;
+}
+
+.into{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 0px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 320px;
+    margin-right: 420px;
+}
+
+.boton{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 70px;
+    background-color: chartreuse;
+    
+}
+
+.texto{
+    margin-top: 50px;
+    width: 120px;
+    height: 60px;
+    border-radius: 10%;
+    border: black;
+    background-color: #55ab62;
+}
+@media (max-width: 600px){
+    .poke, .cabeza{
+        width: 100%;
+    }
+    .contenedor{
+        padding: 0;
+    }
+}
+
+.poke-card{
+    background-color: #032d29;
+    margin-top: 380px;
+    margin-left: 339px;
+    width: 210px;
+    border-radius: 5%;
+}
+.poke-card div{
+    color: aliceblue;
+}
+

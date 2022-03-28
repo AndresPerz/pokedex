@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cabeza">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="poke">
+            <img class='pokedex'src="./img/pokedex.png" alt="">
+            <div class="pokemon">
+                <img data-poke-img id="poke-Img" src="./img/pokeball.png" alt="">
+            </div>
+            <div class="into">
+                <button class="boton" onclick="fetchPokemon()">B</button>
+                <input placeholder="pokemon" class="texto" type="text" name="pokeNombre" id="pokeNombre">
+            </div>
+        </div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+
+        
+        <div data-poke-card class="poke-card" style="position: absolute;">
+            <div data-poke-name>Pokedex</div>
+            <!--imagen para casos de // no encontrar pokemon-->
+            
+            <div data-poke-id></div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
+        </div>
+    </div>
+    
+    
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
